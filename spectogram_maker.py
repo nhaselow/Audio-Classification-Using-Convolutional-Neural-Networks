@@ -73,15 +73,15 @@ def plotstft(audiopath, binsize=2**10, plotpath=None, colormap="jet"):
     plt.figure(figsize=(15, 7.5))
     plt.imshow(np.transpose(ims), origin="lower", aspect="auto", cmap=colormap, interpolation="none")
 
-    plt.colorbar()
+    #plt.colorbar()
 
-    plt.xlabel("time (s)")
-    plt.ylabel("frequency (hz)")
-    plt.xlim([0, timebins-1])
-    plt.ylim([0, freqbins])
+    #plt.xlabel("time (s)")
+    #plt.ylabel("frequency (hz)")
+    #plt.xlim([0, timebins-1])
+    #plt.ylim([0, freqbins])
 
     # remove whitespace and axes
-    #plt.gca().set_axis_off()
+    plt.gca().set_axis_off()
     plt.subplots_adjust(top = 1, bottom = 0, right = 1, left = 0, hspace = 0, wspace = 0)
     plt.margins(0,0)
     plt.gca().xaxis.set_major_locator(plt.NullLocator())
