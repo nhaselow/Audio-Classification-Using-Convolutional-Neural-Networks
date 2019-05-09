@@ -98,7 +98,7 @@ def plotstft(audiopath, binsize=2**10, plotpath=None, colormap="jet"):
 
 aud_dir_path = './audio_files/'
 unzipped_dir_path = './file_in_progress/'
-img_dir_path = './spectograms/'
+img_dir_path = './spectrograms/'
 size = len(os.listdir(aud_dir_path))
 i = 1
 for audfile in os.listdir(aud_dir_path) :
@@ -112,7 +112,7 @@ for audfile in os.listdir(aud_dir_path) :
 			with open(unzipped_file_path, 'wb') as f_out:
 				shutil.copyfileobj(f_in, f_out)
 
-		#convert to spectogram
+		#convert to spectrogram
 		ims = plotstft(unzipped_file_path, plotpath=img_file_path)
         #delete unzipped file
         os.remove(unzipped_file_path)
