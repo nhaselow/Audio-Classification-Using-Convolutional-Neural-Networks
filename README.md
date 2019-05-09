@@ -10,7 +10,7 @@ Google Audioset gives a [download link](https://research.google.com/audioset/dow
 
 ## Downloading the Audio Files
 
-We used a script written by [https://github.com/unixpickle](Alex Nichol) to scrape the data from YouTube. He published the scripts on his [https://github.com/unixpickle/audioset](GitHub), and we used the download function to scrape the data. Pipe 'unbalanced_subset.csv' into his script:
+We used a script written by [Alex Nichol](https://github.com/unixpickle) to scrape the data from YouTube. He published the scripts on [his GitHub](https://github.com/unixpickle/audioset), and we used the download function to scrape the data. Pipe 'unbalanced_subset.csv' into his script:
 
 > $ cat unbalanced_subset.csv | ./download.sh
 
@@ -22,6 +22,6 @@ To convert the audio files into spectrograms, put the zipped audio files (.wav.g
 
 ## Link Images with their Class Labels
 
-To train a model using the spectrograms, we need a clean csv linking the file names to their respective class label. To run this code, you will need to download the [https://github.com/audioset/ontology](Google Audioset Ontology) and put the directory containing the json file on the same level as unbalanced_subset.csv. To create the new csv, run:
+To train a model using the spectrograms, we need a clean csv linking the file names to their respective class label. To run this code, you will need to download the [Google Audioset Ontology](https://github.com/audioset/ontology) and put the directory containing the json file on the same level as unbalanced_subset.csv. To create the new csv, run:
 
 > $ python clean_data.py
