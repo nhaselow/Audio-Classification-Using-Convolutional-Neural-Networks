@@ -1,6 +1,6 @@
 # Stats 479 Deep Learning Final Project Code Repository
 
-This repo contains the code used to clean the data for "Audio Classification Using Convolutional Neural Networks", a paper written for Sebastian Raschka's Deep Learning course at UW-Madison. It takes data scraped from the Google Audioset and converts a select set of them into spectrograms that we used to train a Convolutional Neural Network. All code has been written for and tested in Python 2.7.10.
+This repo contains the code used to clean the data for "Audio Classification Using Convolutional Neural Networks", a paper written by myself, Poet Larsen, and Reng Der for Sebastian Raschka's Deep Learning course at UW-Madison. It takes data scraped from the Google Audioset and converts a select set of them into spectrograms that we used to train a Convolutional Neural Network. All code has been written for and tested in Python 2.7.10.
 
 ## Selecting a Subset of the Audioset
 
